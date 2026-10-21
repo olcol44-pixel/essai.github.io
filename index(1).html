@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Macarons à Nantes – Maison Mélusine, boulangerie artisanale</title>
+<meta name="description" content="Boulangerie artisanale à Nantes spécialisée dans les macarons : une quinzaine de parfums faits main chaque matin. Coffrets cadeaux et commandes pour événements.">
+<link rel="canonical" href="https://www.maison-melusine.example/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#B3124F">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Maison Mélusine">
+<meta property="og:title" content="Macarons à Nantes – Maison Mélusine">
+<meta property="og:description" content="Macarons artisanaux faits chaque matin à Nantes. Coffrets de 6, 12 ou 24.">
+<meta property="og:url" content="https://www.maison-melusine.example/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Bakery","name":"Maison Mélusine","url":"https://www.maison-melusine.example/","description":"Boulangerie artisanale à Nantes spécialisée dans les macarons.","telephone":"+33240000000","email":"contact@maison-melusine.example","priceRange":"€","address":{"@type":"PostalAddress","streetAddress":"12 rue des Exemples","postalCode":"44000","addressLocality":"Nantes","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"19:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:30","closes":"19:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"08:00","closes":"13:00"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F3FA;--surface:#FFFFFF;--ink:#2A1630;--muted:#6B5873;--accent:#B3124F;--line:#E0D6E8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E1224;--surface:#2B1B33;--ink:#F6EDF8;--muted:#BBA6C4;--accent:#FF7DA8;--line:#443052}}
+:root[data-theme="dark"]{--bg:#1E1224;--surface:#2B1B33;--ink:#F6EDF8;--muted:#BBA6C4;--accent:#FF7DA8;--line:#443052}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+.logo{font-family:"DM Serif Display",Georgia,serif;font-size:1.5rem;text-decoration:none}
+nav a{margin-left:1.25rem;text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:3rem 0 4rem}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+.hero p{max-width:34rem;color:var(--muted);margin:1.25rem 0 1.75rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.85rem 1.6rem;border-radius:999px;text-decoration:none;font-weight:600}
+:root[data-theme="dark"] .btn{color:#2A1630}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn{color:#2A1630}}
+.stage{display:flex;flex-direction:column;align-items:center;gap:1.25rem}
+.mac{--c:#B3124F;--f:#F6D2DF;width:min(18rem,70vw);transition:transform .4s}
+.mac i{display:block;height:5.4rem;background:var(--c);transition:background .4s}
+.mac .t{border-radius:50% 50% 18% 18%/90% 90% 22% 22%}
+.mac .b{border-radius:18% 18% 50% 50%/22% 22% 90% 90%}
+.mac .m{height:1.5rem;background:var(--f);margin:0 .7rem;border-radius:.5rem;transition:background .4s}
+.mac.pop{animation:pop .45s}
+@keyframes pop{50%{transform:translateY(-14px) rotate(-3deg)}}
+.name{font:400 1.6rem "DM Serif Display",Georgia,serif;text-align:center}
+.desc{color:var(--muted);text-align:center;min-height:3.3em;max-width:22rem;margin:0}
+.sw{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
+.sw button{width:2.6rem;height:2.6rem;border-radius:50%;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--line);cursor:pointer;background:var(--c)}
+.sw button[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ink)}
+section{padding:4rem 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:1rem}
+.lead{color:var(--muted);max-width:38rem;margin:0 0 2rem}
+.box{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.box article{background:var(--surface);border:1px solid var(--line);border-radius:1.25rem;padding:1.75rem}
+.box h3{font-size:1.6rem}
+.price{font:400 2.2rem "DM Serif Display",Georgia,serif;color:var(--accent);margin:.5rem 0}
+.box p{margin:0;color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+table{border-collapse:collapse;width:100%}
+td{padding:.5rem 0;border-bottom:1px solid var(--line)}
+td:last-child{text-align:right;color:var(--muted)}
+.fl{columns:2;column-gap:2rem;padding-left:1.1rem;margin:0}.fl li{break-inside:avoid;margin-bottom:.5rem}
+details{border-bottom:1px solid var(--line);padding:.9rem 0;max-width:46rem}summary{cursor:pointer;font-weight:600}details p{color:var(--muted);margin:.6rem 0 0}
+address{font-style:normal}
+@media (max-width:760px){.fl{columns:1}}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero,.two,.box{grid-template-columns:1fr}.hero{padding-top:1rem}nav a{margin:0 1rem 0 0}}
+@media (prefers-reduced-motion:reduce){.mac,.mac i,.mac .m{transition:none}.mac.pop{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#top">Maison Mélusine</a>
+<nav aria-label="Navigation principale"><a href="#saveurs">Saveurs</a><a href="#coffrets">Coffrets</a><a href="#boutique">Boutique</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+<div>
+<h1>Des macarons artisanaux faits chaque matin à Nantes.</h1>
+<p>Coques croquantes, cœur fondant, une quinzaine de parfums renouvelés au fil des saisons. Notre boulangerie artisanale nantaise les prépare à la main, avec du beurre de Bretagne et des amandes sélectionnées.</p>
+<a class="btn" href="#coffrets">Commander un coffret</a>
+</div>
+<div class="stage">
+<div class="mac" id="mac" aria-hidden="true"><i class="t"></i><div class="m"></div><i class="b"></i></div>
+<div class="name" id="name" aria-live="polite"></div>
+<p class="desc" id="desc"></p>
+<div class="sw" id="sw" role="group" aria-label="Choisir une saveur"></div>
+</div>
+</div>
+
+<section id="saveurs">
+<h2>Les saveurs de macarons de la saison</h2>
+<p class="lead">La carte change selon les arrivages et les envies du pâtissier. Voici les parfums du moment.</p>
+<ul class="fl">
+<li><strong>Framboise</strong> : ganache à la framboise fraîche.</li>
+<li><strong>Pistache</strong> : pâte de pistache de Sicile.</li>
+<li><strong>Caramel beurre salé</strong> : caramel onctueux et fleur de sel.</li>
+<li><strong>Chocolat noir</strong> : ganache intense à 70 %.</li>
+<li><strong>Citron</strong> : crème de citron acidulée.</li>
+<li><strong>Rose et litchi</strong> : floral et délicat.</li>
+<li><strong>Vanille de Madagascar</strong> : gousses grattées à la main.</li>
+<li><strong>Cassis</strong> : fruité et profond.</li>
+</ul>
+</section>
+
+<section id="coffrets">
+<h2>Coffrets de macarons à Nantes</h2>
+<p class="lead">Composez votre assortiment en boutique, ou laissez-nous choisir pour vous.</p>
+<div class="box">
+<article><h3>Le petit</h3><div class="price">11 €</div><p>6 macarons, pour une pause gourmande à deux.</p></article>
+<article><h3>Le partage</h3><div class="price">21 €</div><p>12 macarons, un assortiment pour un dimanche en famille.</p></article>
+<article><h3>La fête</h3><div class="price">39 €</div><p>24 macarons en coffret cadeau. Commande 48 h à l’avance.</p></article>
+</div>
+</section>
+
+<section id="questions">
+<h2>Questions fréquentes</h2>
+<details><summary>Peut-on commander des macarons pour un mariage ou un événement à Nantes ?</summary><p>Oui. Contactez-nous au moins une semaine à l’avance pour un grand événement, et 48 h pour un coffret de 24.</p></details>
+<details><summary>Combien de temps se conservent les macarons ?</summary><p>Quelques jours au réfrigérateur dans leur boîte. Sortez-les 15 minutes avant de les déguster.</p></details>
+<details><summary>Peut-on retirer sa commande en boutique ?</summary><p>Oui, le retrait se fait à la boutique aux horaires d’ouverture indiqués ci-dessous.</p></details>
+</section>
+
+<section id="boutique" class="two">
+<div>
+<h2>La boutique à Nantes</h2>
+<address class="lead">Maison Mélusine<br>12 rue des Exemples<br>44000 Nantes<br><a href="tel:+33240000000">02 40 00 00 00</a><br><a href="mailto:contact@maison-melusine.example">contact@maison-melusine.example</a></address>
+<p class="lead">Pains, viennoiseries et macarons sur place ou à emporter. Commandes pour mariages et événements sur demande.</p>
+</div>
+<div>
+<h2>Horaires</h2>
+<table>
+<tr><td>Mardi au vendredi</td><td>7 h 00 – 19 h 30</td></tr>
+<tr><td>Samedi</td><td>7 h 30 – 19 h 30</td></tr>
+<tr><td>Dimanche</td><td>8 h 00 – 13 h 00</td></tr>
+<tr><td>Lundi</td><td>Fermé</td></tr>
+</table>
+</div>
+</section>
+</main>
+
+<footer>© Maison Mélusine, Nantes. Les informations de cette page sont des exemples à remplacer.</footer>
+</div>
+
+<script>
+var F=[
+{n:"Framboise",d:"Coque rose vif, ganache à la framboise fraîche.",c:"#B3124F",f:"#F6D2DF"},
+{n:"Pistache",d:"Pâte de pistache de Sicile, légèrement torréfiée.",c:"#8DB255",f:"#E6F0C8"},
+{n:"Caramel beurre salé",d:"Un clin d’œil breton : caramel onctueux et fleur de sel.",c:"#C98A3C",f:"#F3DDB5"},
+{n:"Chocolat noir",d:"Ganache intense au chocolat noir 70 %.",c:"#5A3322",f:"#A8745A"},
+{n:"Citron",d:"Crème de citron acidulée, zeste frais.",c:"#F2CC3A",f:"#FFF4B8"},
+{n:"Rose et litchi",d:"Délicat et floral, pétales de rose en finition.",c:"#E58FB2",f:"#FBE0EA"},
+{n:"Vanille de Madagascar",d:"Gousses de vanille bourbon grattées à la main.",c:"#EBDDBE",f:"#FFFBEF"},
+{n:"Cassis",d:"Ganache au cassis, pour les amateurs de fruits profonds.",c:"#6D2E78",f:"#C6A0CC"}
+];
+var mac=document.getElementById("mac"),nm=document.getElementById("name"),ds=document.getElementById("desc"),sw=document.getElementById("sw");
+function pick(i){
+var x=F[i];mac.style.setProperty("--c",x.c);mac.style.setProperty("--f",x.f);
+nm.textContent=x.n;ds.textContent=x.d;
+mac.classList.remove("pop");void mac.offsetWidth;mac.classList.add("pop");
+[].forEach.call(sw.children,function(b,j){b.setAttribute("aria-pressed",j===i)});
+}
+F.forEach(function(x,i){
+var b=document.createElement("button");b.type="button";b.style.setProperty("--c",x.c);
+b.setAttribute("aria-label",x.n);b.title=x.n;
+b.addEventListener("click",function(){pick(i)});sw.appendChild(b);
+});
+pick(0);
+</script>
+</body>
+</html>
